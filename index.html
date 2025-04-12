@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Type Forecast</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .navbar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3><b>INSIGHTS</b></h3>
+        <hr>
+        <a href="insights/Total_distribution_fund.html" target="content-frame">Total Distributable Fund Outlook</a>
+        <a href="insights/Spendable_fund_forecast.html" target="content-frame">Spendable Fund Outlook</a>
+        <a href="insights/Admin_fee_fund_forecast.html" target="content-frame">Admin Fee Outlook</a>
+        <hr>
+        <a href="insights/Faculty_fund_forecast.html" target="content-frame">Faculty Fund Outlook</a>
+        <a href="insights/General_fund_forecast.html" target="content-frame">General Fund Outlook</a>
+        <a href="insights/Grant_fund_forecast.html" target="content-frame">Grant Fund Outlook</a>
+        <a href="insights/Program_fund_forecast.html" target="content-frame">Program Fund Outlook</a>
+        <a href="insights/Research_fund_forecast.html" target="content-frame">Research Fund Outlook</a>
+        <a href="insights/Scholarship_fund_forecast.html" target="content-frame">Scholarship Fund Outlook</a>
+        <hr>
+        <a href="insights/Area_Distribution_TFB.html" target="content-frame">Area Distribution Total Fund Balance</a>
+        <a href="insights/Fund_Type_Distribution_TFB.html" 
+        target="content-frame">Fund Type Distribution Total Fund Balance</a>
+        <hr>
+        <a href="insights/Expense_Distribution.html" target="content-frame">Expense Distribution - Budget - 25/26</a>
+        <a href="insights/Income_Distribution.html" target="content-frame">Income Distribution - Budget - 25/26</a>
+    </div>
+    <div class="content">
+        <iframe name="content-frame" src="insights/Total_distribution_fund.html"></iframe>
+    </div>
+</body>
+</html>
